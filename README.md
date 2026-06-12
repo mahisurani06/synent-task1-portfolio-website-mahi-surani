@@ -30,6 +30,23 @@ mahi-portfolio/
 ├── style.css         ← Complete stylesheet (~700 lines)
 └── README.md         ← This file
 ```
+## Screenshots
+
+### About Page
+
+![Home Page](screenshots/about.png)
+
+### Skills Section
+
+![About Section](screenshots/skills.png)
+
+### Projects Section
+
+![Projects Section](screenshots/projects.png)
+
+### Contact Section
+
+![Projects Section](screenshots/contact.png)
 
 ## Project Outcome
 
