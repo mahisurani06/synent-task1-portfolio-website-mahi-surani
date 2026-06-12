@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mahi Surani – Aspiring Web Developer & Cybersecurity Enthusiast. Portfolio for web development internship applications." />
+  <meta name="author" content="Mahi Surani" />
+  <title>Mahi Surani | Web Developer & Cybersecurity Enthusiast</title>
+
+  <!-- Google Fonts: Syne (display) + DM Mono (code/accents) + DM Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <!-- Logo / Brand -->
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-name">MS</span>
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <!-- Desktop Links -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about"    class="nav-link">About</a></li>
+        <li><a href="#skills"   class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact"  class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Hire Me CTA -->
+      <a href="#contact" class="nav-cta">Hire Me</a>
+
+      <!-- Mobile Hamburger -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about"    class="mob-link">About</a></li>
+      <li><a href="#skills"   class="mob-link">Skills</a></li>
+      <li><a href="#projects" class="mob-link">Projects</a></li>
+      <li><a href="#contact"  class="mob-link">Contact</a></li>
+    </ul>
+  </div>
+
+
+  <!-- ============================================================
+       HERO SECTION
+  ============================================================ -->
+  <section class="hero" id="hero">
+
+    <!-- Animated grid background -->
+    <div class="hero-grid" aria-hidden="true"></div>
+
+    <!-- Floating geometric orbs -->
+    <div class="orb orb-1" aria-hidden="true"></div>
+    <div class="orb orb-2" aria-hidden="true"></div>
+    <div class="orb orb-3" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <!-- Terminal-style greeting -->
+      <p class="hero-greeting">
+        <span class="terminal-prompt">~/portfolio$</span>
+        <span class="terminal-cmd"> whoami</span>
+      </p>
+
+      <!-- Main headline -->
+      <h1 class="hero-title">
+        <span class="title-line">Hi, I'm</span>
+        <span class="title-name">Mahi Surani</span>
+      </h1>
+
+      <!-- Animated role tagline -->
+      <p class="hero-tagline">
+        <span class="tag-static">Aspiring </span>
+        <span class="tag-rotate" id="tagRotate">Web Developer</span>
+      </p>
+
+      <!-- Short bio -->
+      <p class="hero-bio">
+        Building clean, functional web experiences by day —
+        exploring security vulnerabilities and network architecture by night.
+      </p>
+
+      <!-- CTA Buttons -->
+      <div class="hero-ctas">
+        <a href="#projects" class="btn-primary">
+          <span>View My Work</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#contact" class="btn-ghost">Let's Connect</a>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="scroll-indicator" aria-hidden="true">
+        <div class="scroll-dot"></div>
+        <span>scroll</span>
+      </div>
+    </div>
+
+    <!-- Decorative code block floating right -->
+    <div class="hero-code-card" aria-hidden="true">
+      <div class="code-header">
+        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+        <span class="code-filename">profile.js</span>
+      </div>
+      <pre class="code-body"><span class="kw">const</span> <span class="fn">mahi</span> = {
+  <span class="prop">role</span>: <span class="str">"Web Developer"</span>,
+  <span class="prop">passion</span>: <span class="str">"Cybersecurity"</span>,
+  <span class="prop">skills</span>: [
+    <span class="str">"HTML"</span>, <span class="str">"CSS"</span>,
+    <span class="str">"JavaScript"</span>,
+    <span class="str">"Networking"</span>
+  ],
+  <span class="prop">available</span>: <span class="bool">true</span> <span class="comment">// hire me!</span>
+};</pre>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       ABOUT SECTION
+  ============================================================ -->
+  <section class="section about-section" id="about">
+    <div class="container">
+
+      <!-- Section label -->
+      <div class="section-label">
+        <span class="label-line"></span>
+        <span class="label-text">01 / About Me</span>
+      </div>
+
+      <div class="about-grid">
+
+        <!-- Profile Card -->
+        <div class="profile-card glass-card">
+          <div class="avatar-wrap">
+            <div class="avatar-ring"></div>
+            <div class="avatar-initials">MS</div>
+            <div class="avatar-badge">
+              <span class="badge-dot"></span>Available for Internship
+            </div>
+          </div>
+
+          <!-- Quick stats row -->
+          <div class="profile-stats">
+            <div class="stat">
+              <span class="stat-num">3+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+              <span class="stat-num">2</span>
+              <span class="stat-label">Domains</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+              <span class="stat-num">∞</span>
+              <span class="stat-label">Curiosity</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bio content -->
+        <div class="about-content">
+          <h2 class="section-title">Passionate Builder.<br/><em>Security-Minded Thinker.</em></h2>
+
+          <p class="about-text">
+            I'm a self-driven developer with a strong fascination for the intersection of
+            <strong>web development</strong> and <strong>cybersecurity</strong>. Whether I'm crafting
+            pixel-perfect user interfaces or simulating attack-defense scenarios in an Active Directory lab,
+            I bring the same energy — curiosity and precision.
+          </p>
+
+          <p class="about-text">
+            My journey started with building websites, which quickly led me to wonder: <em>"How could someone
+            break this?"</em> That question opened the world of ethical hacking, network architecture,
+            and security automation — and I've been hooked ever since.
+          </p>
+
+          <!-- Education + Interests cards -->
+          <div class="about-tags-grid">
+            <div class="tag-card">
+              <div class="tag-icon">🎓</div>
+              <div>
+                <p class="tag-title">Education</p>
+                <p class="tag-sub">Web Development & IT</p>
+              </div>
+            </div>
+            <div class="tag-card">
+              <div class="tag-icon">🔐</div>
+              <div>
+                <p class="tag-title">Cybersecurity</p>
+                <p class="tag-sub">Ethical Hacking, AD Labs</p>
+              </div>
+            </div>
+            <div class="tag-card">
+              <div class="tag-icon">🌐</div>
+              <div>
+                <p class="tag-title">Networking</p>
+                <p class="tag-sub">Protocols, TCP/IP, DNS</p>
+              </div>
+            </div>
+            <div class="tag-card">
+              <div class="tag-icon">⚡</div>
+              <div>
+                <p class="tag-title">Interests</p>
+                <p class="tag-sub">OSS, CTFs, Open Source</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SKILLS SECTION
+  ============================================================ -->
+  <section class="section skills-section" id="skills">
+    <div class="container">
+
+      <div class="section-label">
+        <span class="label-line"></span>
+        <span class="label-text">02 / Skills</span>
+      </div>
+
+      <h2 class="section-title centered">My Tech Stack</h2>
+      <p class="section-sub">Technologies I work with and concepts I've explored.</p>
+
+      <!-- Skills grid -->
+      <div class="skills-grid">
+
+        <!-- Web Dev Skills -->
+        <div class="skills-group">
+          <p class="skills-group-label">// Frontend & Tools</p>
+          <div class="skill-cards-row">
+
+            <div class="skill-card" data-level="90">
+              <div class="skill-icon html-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/></svg>
+              </div>
+              <p class="skill-name">HTML5</p>
+              <div class="skill-bar"><div class="skill-fill" style="--pct:90%"></div></div>
+              <span class="skill-pct">Advanced</span>
+            </div>
+
+            <div class="skill-card" data-level="85">
+              <div class="skill-icon css-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.003-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"/></svg>
+              </div>
+              <p class="skill-name">CSS3</p>
+              <div class="skill-bar"><div class="skill-fill" style="--pct:85%"></div></div>
+              <span class="skill-pct">Advanced</span>
+            </div>
+
+            <div class="skill-card" data-level="70">
+              <div class="skill-icon js-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/></svg>
+              </div>
+              <p class="skill-name">JavaScript</p>
+              <div class="skill-bar"><div class="skill-fill" style="--pct:70%"></div></div>
+              <span class="skill-pct">Intermediate</span>
+            </div>
+
+            <div class="skill-card" data-level="80">
+              <div class="skill-icon github-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              </div>
+              <p class="skill-name">GitHub</p>
+              <div class="skill-bar"><div class="skill-fill" style="--pct:80%"></div></div>
+              <span class="skill-pct">Proficient</span>
+            </div>
+
+            <div class="skill-card" data-level="90">
+              <div class="skill-icon vscode-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.15 2.587L18.21.21a1.494 1.494 0 0 0-1.705.29l-9.46 8.63-4.12-3.128a.999.999 0 0 0-1.276.057L.327 7.261A1 1 0 0 0 .326 8.74L3.899 12 .326 15.26a1 1 0 0 0 .001 1.479L1.65 17.94a.999.999 0 0 0 1.276.057l4.12-3.128 9.46 8.63a1.492 1.492 0 0 0 1.704.29l4.942-2.377A1.5 1.5 0 0 0 24 20.06V3.939a1.5 1.5 0 0 0-.85-1.352zm-5.146 14.861L10.826 12l7.178-5.448v10.896z"/></svg>
+              </div>
+              <p class="skill-name">VS Code</p>
+              <div class="skill-bar"><div class="skill-fill" style="--pct:90%"></div></div>
+              <span class="skill-pct">Daily Driver</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Security & Networking Skills -->
+        <div class="skills-group">
+          <p class="skills-group-label">// Security & Networking</p>
+          <div class="skill-cards-row">
+
+            <div class="skill-card" data-level="65">
+              <div class="skill-icon net-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM2.05 13h4.01c.1 1.38.42 2.7.92 3.93C4.53 16.01 2.6 14.67 2.05 13zM6.06 11H2.05c.55-1.67 2.48-3.01 4.88-3.93A14.18 14.18 0 0 0 6.06 11zm2.01 0c.1-1.41.44-2.74.97-3.93C10.06 7.02 11.03 7 12 7c.97 0 1.94.02 2.96.07.53 1.19.87 2.52.97 3.93H8.07zm0 2h7.86c-.1 1.41-.44 2.74-.97 3.93C13.94 16.98 12.97 17 12 17c-.97 0-1.94-.02-2.96-.07A12.1 12.1 0 0 1 8.07 13zm9.88-2c-.1-1.38-.42-2.7-.92-3.93 2.35.92 4.28 2.26 4.88 3.93h-3.96zm0 2h3.96c-.6 1.67-2.53 3.01-4.88 3.93.5-1.23.82-2.55.92-3.93z"/></svg>
+              </div>
+              <p class="skill-name">Networking</p>
+              <div class="skill-bar"><div class="skill-fill" style="--pct:65%"></div></div>
+              <span class="skill-pct">Learning</span>
+            </div>
+
+            <div class="skill-card" data-level="60">
+              <div class="skill-icon sec-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L3 7v6c0 5.25 3.75 10.15 9 11.25C17.25 23.15 21 18.25 21 13V7L12 2z"/></svg>
+              </div>
+              <p class="skill-name">Cybersecurity</p>
+              <div class="skill-bar"><div class="skill-fill" style="--pct:60%"></div></div>
+              <span class="skill-pct">Exploring</span>
+            </div>
+
+            <div class="skill-card" data-level="55">
+              <div class="skill-icon py-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05L0 11.97l.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.26-.02.21-.01h5.74l.69-.05.59-.14.5-.22.41-.27.33-.32.27-.35.2-.36.15-.37.1-.35.07-.32.04-.27.02-.21V1.36l.05-.27.12-.28.19-.27.26-.25.33-.22.39-.18.44-.14.49-.1.54-.04.57.01zM14.7 16.88l-.08.32-.13.29-.19.27-.26.24-.31.2-.37.17-.41.14-.45.1-.47.07-.49.03-.5.01H2.41l.08.32.13.3.19.27.26.24.32.21.37.17.41.14.45.1.48.07.49.03.5.01h8.54l.49-.03.48-.07.45-.1.41-.14.37-.17.32-.21.26-.24.19-.27.13-.3.08-.32.05-.34.02-.37V17.22l-.02-.34zM21.17 7.94l-.08-.32-.13-.3-.19-.27-.26-.24-.31-.2-.37-.17-.41-.14-.45-.1-.47-.07-.49-.03-.5-.01H8.77l-.49.03-.48.07-.45.1-.41.14-.37.17-.32.21-.26.24-.19.27-.13.3-.08.32-.05.34-.02.37v.34l.02.37.05.34zM8.95 4.26l.15.38.19.34.24.31.28.26.32.22.35.18.37.14.39.11.4.07.41.04h.49l.41-.04.4-.07.39-.11.37-.14.35-.18.32-.22.28-.26.24-.31.19-.34.15-.38.1-.41.04-.44-.04-.44-.1-.41zm12.29 12.67l-.15-.38-.19-.34-.24-.31-.28-.26-.32-.22-.35-.18-.37-.14-.39-.11-.4-.07-.41-.04h-.49l-.41.04-.4.07-.39.11-.37.14-.35.18-.32.22-.28.26-.24.31-.19.34-.15.38-.1.41-.04.44.04.44.1.41z"/></svg>
+              </div>
+              <p class="skill-name">Python</p>
+              <div class="skill-bar"><div class="skill-fill" style="--pct:55%"></div></div>
+              <span class="skill-pct">Scripting</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       PROJECTS SECTION
+  ============================================================ -->
+  <section class="section projects-section" id="projects">
+    <div class="container">
+
+      <div class="section-label">
+        <span class="label-line"></span>
+        <span class="label-text">03 / Projects</span>
+      </div>
+
+      <h2 class="section-title centered">Featured Work</h2>
+      <p class="section-sub">Things I've built — from frontend interfaces to security tooling.</p>
+
+      <div class="projects-grid">
+
+        <!-- Project 1: News Website -->
+        <article class="project-card glass-card">
+          <div class="project-header">
+            <div class="project-number">01</div>
+            <div class="project-links">
+              <a href="#" class="proj-link" aria-label="GitHub repo">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              </a>
+              <a href="#" class="proj-link" aria-label="Live demo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="project-accent accent-blue"></div>
+
+          <div class="project-body">
+            <h3 class="project-title">Up To Date News Website</h3>
+            <p class="project-desc">
+              A responsive news aggregation website fetching real-time headlines across categories
+              like Technology, Business, and Security. Features a clean card-based layout with
+              category filtering and smooth read-more interactions.
+            </p>
+          </div>
+
+          <div class="project-footer">
+            <div class="tech-tags">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">News API</span>
+            </div>
+            <span class="project-status status-live">
+              <span class="status-dot"></span>Live
+            </span>
+          </div>
+        </article>
+
+        <!-- Project 2: Python Security Tool -->
+        <article class="project-card glass-card featured-project">
+          <div class="featured-badge">⭐ Featured</div>
+          <div class="project-header">
+            <div class="project-number">02</div>
+            <div class="project-links">
+              <a href="#" class="proj-link" aria-label="GitHub repo">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="project-accent accent-teal"></div>
+
+          <div class="project-body">
+            <h3 class="project-title">Python Security Automation Tool</h3>
+            <p class="project-desc">
+              A command-line security utility that automates reconnaissance tasks: port scanning,
+              banner grabbing, and basic vulnerability checks. Built to deepen understanding of
+              how attackers approach target enumeration — from a defensive lens.
+            </p>
+          </div>
+
+          <div class="project-footer">
+            <div class="tech-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Socket</span>
+              <span class="tech-tag">Subprocess</span>
+              <span class="tech-tag">CLI</span>
+            </div>
+            <span class="project-status status-wip">
+              <span class="status-dot"></span>WIP
+            </span>
+          </div>
+        </article>
+
+        <!-- Project 3: Active Directory Lab -->
+        <article class="project-card glass-card">
+          <div class="project-header">
+            <div class="project-number">03</div>
+            <div class="project-links">
+              <a href="#" class="proj-link" aria-label="Documentation">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="project-accent accent-purple"></div>
+
+          <div class="project-body">
+            <h3 class="project-title">Active Directory Lab Setup</h3>
+            <p class="project-desc">
+              A fully virtualized enterprise network simulation using VirtualBox and Windows Server.
+              Configured a Domain Controller with users, groups, GPOs, and DNS. Used to practice
+              AD attacks including Kerberoasting and pass-the-hash in an isolated environment.
+            </p>
+          </div>
+
+          <div class="project-footer">
+            <div class="tech-tags">
+              <span class="tech-tag">Windows Server</span>
+              <span class="tech-tag">VirtualBox</span>
+              <span class="tech-tag">Active Directory</span>
+              <span class="tech-tag">PowerShell</span>
+            </div>
+            <span class="project-status status-done">
+              <span class="status-dot"></span>Complete
+            </span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       CONTACT SECTION
+  ============================================================ -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+
+      <div class="section-label">
+        <span class="label-line"></span>
+        <span class="label-text">04 / Contact</span>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- Left: Headline -->
+        <div class="contact-intro">
+          <h2 class="section-title">Let's Build<br/><em>Something Great.</em></h2>
+          <p class="contact-text">
+            I'm actively looking for web development internship opportunities where I can
+            contribute, learn from experienced developers, and bring fresh energy to a team.
+          </p>
+          <p class="contact-text">
+            Whether you have an opening, a project idea, or just want to chat about
+            security and web tech — my inbox is always open.
+          </p>
+          <a href="mailto:mahisurani06@gmail.com" class="btn-primary">
+            <span>Send Me an Email</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </div>
+
+        <!-- Right: Contact Cards -->
+        <div class="contact-cards">
+ <a href="mailto:mahisurani06@gmail.com" class="contact-card glass-card">
+    <div class="contact-info">
+      <p class="contact-label">Email</p>
+      <p class="contact-value">mahisurani06@gmail.com</p>
+    </div>
+  </a>
+          
+          
+          <!--github-->
+          <a href="https://github.com/mahisurani06" target="_blank" rel="noopener noreferrer" class="contact-card glass-card">
+   
+
+            <div class="contact-info">
+              <p class="contact-label">GitHub</p>
+              <p class="contact-value">github.com/mahisurani06</p>
+            </div>
+            </a>
+
+             <!--linkdin-->
+
+    <a href="https://www.linkedin.com/in/mahi-surani-9bab5333b/"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="contact-card glass-card">
+
+    <div class="contact-info">
+      <p class="contact-label">LinkedIn</p>
+      <p class="contact-value">linkedin.com/in/mahi-surani-9bab5333b</p>
+    </div>
+  </a>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="footer-inner">
+
+      <!-- Footer Logo -->
+      <div class="footer-logo">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-name">MS</span>
+        <span class="logo-bracket">/&gt;</span>
+      </div>
+
+      <!-- Footer tagline -->
+      <p class="footer-tagline">
+        Built with <span class="heart">♥</span> and pure HTML &amp; CSS
+      </p>
+
+      <!-- Social icons row -->
+      <div class="footer-socials">
+        <a href="mailto:mahisurani06@email.com" class="footer-social" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+        <a href="https://github.com/mahisurani06" target="_blank" rel="noopener" class="footer-social" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/mahi-surani-9bab5333b/" target="_blank" rel="noopener" class="footer-social" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+      </div>
+
+      <!-- Copyright -->
+      <p class="footer-copy">
+        &copy; 2025 Mahi Surani. All rights reserved.
+      </p>
+
+    </div>
+  </footer>
+
+
+  <!-- ============================================================
+       JAVASCRIPT — Navigation, Hamburger, Scroll, Animations
+  ============================================================ -->
+  <script>
+    /* ── Navbar scroll effect ── */
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    /* ── Hamburger / Mobile Menu ── */
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileMenu.classList.toggle('open');
+    });
+
+    /* Close mobile menu on link click */
+    document.querySelectorAll('.mob-link').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('open');
+        mobileMenu.classList.remove('open');
+      });
+    });
+
+    /* ── Smooth scrolling for all anchor links ── */
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    /* ── Rotating tagline in hero ── */
+    const roles = ['Web Developer', 'Cybersecurity Enthusiast', 'Problem Solver', 'Open Source Fan'];
+    let roleIdx = 0;
+    const tagEl = document.getElementById('tagRotate');
+
+    setInterval(() => {
+      tagEl.classList.add('fade-out');
+      setTimeout(() => {
+        roleIdx = (roleIdx + 1) % roles.length;
+        tagEl.textContent = roles[roleIdx];
+        tagEl.classList.remove('fade-out');
+        tagEl.classList.add('fade-in');
+        setTimeout(() => tagEl.classList.remove('fade-in'), 400);
+      }, 300);
+    }, 2800);
+
+    /* ── Intersection Observer for scroll-in animations ── */
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          /* Animate skill bars */
+          entry.target.querySelectorAll('.skill-fill').forEach(bar => {
+            bar.style.width = bar.style.getPropertyValue('--pct') || bar.parentElement?.parentElement?.dataset?.level + '%';
+          });
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll(
+      '.glass-card, .skill-card, .tag-card, .section-title, .about-text, .section-label'
+    ).forEach(el => {
+      el.classList.add('fade-up');
+      observer.observe(el);
+    });
+
+    /* ── Active nav link highlight on scroll ── */
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(sec => {
+        if (window.scrollY >= sec.offsetTop - 100) current = sec.getAttribute('id');
+      });
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current) link.classList.add('active');
+      });
+    });
+  </script>
+
+</body>
+</html>
