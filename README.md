@@ -52,6 +52,9 @@ mahi-portfolio/
 
 Successfully developed a professional portfolio website that highlights my technical skills, projects, and achievements while improving my frontend development and responsive design skills.
 
+### Live Demo
+file:///C:/Users/VICTUS/OneDrive/Documents/Synent-Web-Development-Internship/Task1%20Portfolio-Website/index.html
+
 ## Author
 
 Mahi Surani
